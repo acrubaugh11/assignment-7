@@ -81,7 +81,7 @@ async function addNewJoke(event) {
         delivery: newJokeDelivery
     });
     try {
-        const response = await fetch("/jokebook/joke/add", {
+        const response = await fetch("/jokebook/add", {
             method: "POST",
             headers: {
                 Accept: "application/json, text/plain, */*",

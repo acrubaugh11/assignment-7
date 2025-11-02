@@ -75,7 +75,7 @@ app.get("/jokebook/random", async function (req, res){
     }
 });
 
-app.post("/jokebook/joke/add", async function (req, res){
+app.post("/jokebook/add", async function (req, res){
     let category = parseInt(req.body.category_id);
     let setup = req.body.setup;
     let delivery = req.body.delivery;
