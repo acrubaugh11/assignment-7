@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD API</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Jokebook</h1>
+
+    <div id="search-category">
+      <label for="category-search">Search by Category:</label>
+      <input type="text" id="category-search" placeholder="Enter category name">
+      <button id="search-btn">View Jokes</button>
+    </div>
+
+
+
+    <div id="navbar">
+      <button id="category-btn">View Joke Categories</button>
+    </div>
+    <div id="categories">
+    </div>
+
+    <div id="random-joke">
+      <h4>Your Random Joke:</h4>
+    </div>
+
+    <div id="jokes"></div>
+
+    <div id="add-joke">
+      <h3>Add a New Joke</h3>
+        <form id="add-joke-form">
+          <label for="category">Category:</label>
+          <select id="category" name="category_id" required>
+            <option value="1">Funny Joke</option>
+            <option value="2">Lame Joke</option>
+          </select>
+          <br>
+
+          <label for="setup">Setup:</label>
+          <input type="text" id="setup" name="setup" required>
+          <br>
+
+          <label for="delivery">Delivery:</label>
+          <input type="text" id="delivery" name="delivery" required>
+          <br>
+
+          <button type="submit">Add Joke</button>
+        </form>
+      <p id="form-message"></p>
+    </div>
+
+  </div>
+</body>
+
+</html>
